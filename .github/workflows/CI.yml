@@ -58,9 +58,9 @@ jobs:
       with:
         name: windows
         path: |
-          JirenyteSetup.exe
-          JirenyteSetup32.exe
-          JirenyteSetupAArch64.exe
+          DalorianScapeSetup.exe
+          DalorianScapeSetup32.exe
+          DalorianScapeSetupAArch64.exe
         if-no-files-found: error
   linux:
     runs-on: ubuntu-24.04
@@ -92,8 +92,8 @@ jobs:
           appimagetool-x86_64.AppImage
           runtime-x86_64
           runtime-aarch64
-          Jirenyte.AppImage
-          Jirenyte-aarch64.AppImage
+          DalorianScape.AppImage
+          DalorianScape-aarch64.AppImage
         if-no-files-found: error
   macos:
     runs-on: macos-13
@@ -128,7 +128,7 @@ jobs:
       run: ./build-osx-aarch64.sh --build --dmg
     # tar app to keep permissions correct
     - name: tar app
-      run: tar -cf app.tar build/macos-x64/Jirenyte.app build/macos-aarch64/Jirenyte.app build-osx-x64.sh build-osx-aarch64.sh osx/signing.entitlements
+      run: tar -cf app.tar build/macos-x64/DalorianScape.app build/macos-aarch64/Jirenyte.app build-osx-x64.sh build-osx-aarch64.sh osx/signing.entitlements
     - uses: actions/upload-artifact@v4
       with:
         name: macos-dmg
