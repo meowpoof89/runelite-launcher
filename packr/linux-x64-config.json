@@ -1,6 +1,6 @@
 {
   "classPath": [
-    "Jirenyte.jar"
+    "DalorianScape.jar"
   ],
   "mainClass": "net.runelite.launcher.Launcher",
   "vmArgs": [
