@@ -25,15 +25,15 @@ fi
 echo "$WIN64_CHKSUM win64_jre.zip" | sha256sum -c
 
 cp native/build-x64/src/Release/DalorianScape.exe build/win-x64/
-cp build/libs/DalorianScape.jar build/win-x64/
+cp build/libs/Jirenyte.jar build/win-x64/
 cp packr/win-x64-config.json build/win-x64/config.json
 cp liblauncher/build64/Release/launcher_amd64.dll build/win-x64/
 
 unzip win64_jre.zip
 mv jdk-$WIN64_VERSION-jre build/win-x64/jre
 
-echo Jirenyte.exe 64bit sha256sum
-sha256sum build/win-x64/Jirenyte.exe
+echo DalorianScape.exe 64bit sha256sum
+sha256sum build/win-x64/DalorianScape.exe
 
 dumpbin //HEADERS build/win-x64/DalorianScape.exe
 
