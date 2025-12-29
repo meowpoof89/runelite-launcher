@@ -3,7 +3,7 @@
 set -e
 
 echo Launcher sha256sum
-sha256sum build/libs/DalorianScape.jar
+sha256sum build/libs/Jirenyte.jar
 
 cmake -S liblauncher -B liblauncher/build64 -A x64
 cmake --build liblauncher/build64 --config Release
