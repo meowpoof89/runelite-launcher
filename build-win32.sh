@@ -32,7 +32,7 @@ cp liblauncher/build32/Release/launcher_x86.dll build/win-x86/
 unzip win32_jre.zip
 mv jdk-$WIN32_VERSION-jre build/win-x86/jre
 
-echo Jirenyte.exe 32bit sha256sum
+echo DalorianScape.exe 32bit sha256sum
 sha256sum build/win-x86/DalorianScape.exe
 
 dumpbin //HEADERS build/win-x86/DalorianScape.exe

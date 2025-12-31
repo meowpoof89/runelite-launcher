@@ -46,7 +46,7 @@ ln -s ../../server/libjvm.so jre/lib/amd64/server/ # packr looks for libjvm at t
 # Symlink AppRun -> DalorianScape
 ln -s DalorianScape AppRun
 
-# Ensure Jirenyte is executable to all users
+# Ensure DalorianScape is executable to all users
 chmod 755 DalorianScape
 popd
 

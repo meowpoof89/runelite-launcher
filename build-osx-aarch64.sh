@@ -36,7 +36,7 @@ build() {
     mkdir $APPBASE/Contents/Resources/jre
     mv jdk-$MAC_AARCH64_VERSION-jre/Contents/Home/* $APPBASE/Contents/Resources/jre
 
-    echo Setting world execute permissions on Jirenyte
+    echo Setting world execute permissions on DalorianScape
     pushd $APPBASE
     chmod g+x,o+x Contents/MacOS/DalorianScape
     popd
@@ -50,7 +50,7 @@ dmg() {
 
     # create-dmg exits with an error code due to no code signing, but is still okay
     create-dmg $APPBASE . || true
-    mv Jirenyte\ *.dmg DalorianScape-aarch64.dmg
+    mv DalorianScape\ *.dmg DalorianScape-aarch64.dmg
 
     # dump for CI
     hdiutil imageinfo DalorianScape-aarch64.dmg

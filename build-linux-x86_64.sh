@@ -43,10 +43,10 @@ pushd build/linux-x64/
 mkdir -p jre/lib/amd64/server/
 ln -s ../../server/libjvm.so jre/lib/amd64/server/ # packr looks for libjvm at this hardcoded path
 
-# Symlink AppRun -> Jirenyte
+# Symlink AppRun -> DalorianScape
 ln -s DalorianScape AppRun
 
-# Ensure Jirenyte is executable to all users
+# Ensure DalorianScape is executable to all users
 chmod 755 DalorianScape
 popd
 
@@ -58,6 +58,6 @@ chmod +x appimagetool-x86_64.AppImage
 ./appimagetool-x86_64.AppImage \
 	--runtime-file runtime-x86_64 \
 	build/linux-x64/ \
-	Jirenyte.AppImage
+	DalorianScape.AppImage
 
 ./DalorianScape.AppImage --help

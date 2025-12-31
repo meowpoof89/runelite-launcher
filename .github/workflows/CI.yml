@@ -83,7 +83,7 @@ jobs:
     - uses: actions/upload-artifact@v4
       with:
         name: jar
-        path: build/libs/Jirenyte.jar
+        path: build/libs/DalorianScape.jar
         if-no-files-found: error
     - uses: actions/upload-artifact@v4
       with:
@@ -128,13 +128,13 @@ jobs:
       run: ./build-osx-aarch64.sh --build --dmg
     # tar app to keep permissions correct
     - name: tar app
-      run: tar -cf app.tar build/macos-x64/DalorianScape.app build/macos-aarch64/Jirenyte.app build-osx-x64.sh build-osx-aarch64.sh osx/signing.entitlements
+      run: tar -cf app.tar build/macos-x64/DalorianScape.app build/macos-aarch64/DalorianScape.app build-osx-x64.sh build-osx-aarch64.sh osx/signing.entitlements
     - uses: actions/upload-artifact@v4
       with:
         name: macos-dmg
         path: |
-          Jirenyte-x64.dmg
-          Jirenyte-aarch64.dmg
+          DalorianScape-x64.dmg
+          DalorianScape-aarch64.dmg
         if-no-files-found: error
     - uses: actions/upload-artifact@v4
       with:
