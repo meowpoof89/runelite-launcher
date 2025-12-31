@@ -7,7 +7,7 @@ Can be used for any client revision (317, OSRS, 500+, etc.), as well as any Java
 - Fork this repository on GitHub
 - Replace all `DalorianScape` (case sensitive) with your server name.
 - Replace all `DalorianScape` (case sensitive) with your lowercase server name.
-- Replace `DalorianScape.com`/`DalorianScape.com` with your domain name.
+- Replace `dalorian-ceo.com`/`dalorian-ceo.com` with your domain name.
 - In `launcher.properties` replace the `https://static.runelite.net/bootstrap.json` link with a link to your own
   bootstrap (you can host it on a Gist for example).
   See [bootstrap.json.example](https://github.com/Jire/runelite-launcher/blob/main/bootstrap.json.example) for an

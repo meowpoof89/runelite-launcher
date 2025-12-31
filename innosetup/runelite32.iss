@@ -3,7 +3,7 @@ AppName=DalorianScape Launcher
 AppPublisher=DalorianScape
 UninstallDisplayName=DalorianScape
 AppVersion=${project.version}
-AppSupportURL=https://DalorianScape.com
+AppSupportURL=https://dalorian-ceo.com
 DefaultDirName={localappdata}\DalorianScape
 
 ; ~30 mb for the repo the launcher downloads
